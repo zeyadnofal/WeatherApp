@@ -14,7 +14,7 @@ namespace WeatherApp.Services
     public class WeatherService
     {
         public readonly HttpClient _httpClient;
-        private readonly string _api = ConfigurationManager.AppSettings.Get("api");
+        private readonly string _api = ConfigurationManager.AppSettings["api"];
 
         public WeatherService()
         {
